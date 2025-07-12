@@ -2,5 +2,5 @@
 numero = float(input('Por favor, digite um número: '))
 dobro = numero * 2
 triplo = numero * 3
-raiz = numero * (1/2)
-print('O número digitado é {:.3}, seu dobro é {:.3}, seu triplo é {:.3} e sua raiz é {:.3}'.format(numero,dobro,triplo,raiz))
+raiz = numero ** (1/2)
+print('O número digitado é {:.2f}, seu dobro é {:.2f}, seu triplo é {:.2f} e sua raiz é {:.2f}'.format(numero,dobro,triplo,raiz))
