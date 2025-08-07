@@ -5,7 +5,7 @@ an experienced programer in any programming language
 Its also easy for beginner to use and learn, so jump in!''')
 print(' ')
 
-frase = '  Curso em Vídeo Python  '
+frase = 'Curso em Vídeo Python '
 print(frase)
 print(frase[3])
 print(frase[3:13])
