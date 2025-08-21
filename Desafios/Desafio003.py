@@ -1,8 +1,8 @@
 # DESAFIO 3 - Crie um programa que leia dois números e mostre a soma entre elas.
 cores = {
-'Bold-Verde' : '\033[32m',
-'Bold-Azul' : '\033[34m',
-'Limpar' : '\033[m'
+    'Bold-Verde' : '\033[32m',
+    'Bold-Azul' : '\033[34m',
+    'Limpar' : '\033[m'
 }
 n1 = int(input('Digite o primeiro valor: '))
 n2 = int(input('Digite o segundo valor: '))
