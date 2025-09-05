@@ -16,14 +16,20 @@ texto = {
 }
 
 from time import sleep
+print('{}={}'.format(texto['Roxo'],texto['Limpar']) * 30)
+print('   {}APROVADOR DE EMPRÉSDTIMO   '.format(texto['Ciano']))
+print('{}={}'.format(texto['Roxo'], texto['Limpar']) * 30)
+
 valorcasa = float(input('Qual o valor da casa desejada? R$'))
+sleep(0.2)
 salario = float(input('Por favor digite o salário do comprador: R$'))
+sleep(0.2)
 anos = int(input('Em quantos anos o comprador irá pagar? '))
 
 prestacao = valorcasa / (anos * 12)
 porcentagem = salario * (30/100)
 
-sleep(0.3)
+sleep(0.2)
 print(' ')
 print('{}ANALISANDO...'.format(texto['Roxo']))
 print(' ')
