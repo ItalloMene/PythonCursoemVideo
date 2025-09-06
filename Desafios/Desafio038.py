@@ -5,6 +5,7 @@ mostrando na tela uma mensagem:
 - O segundo valor é o maior
 - Não existe valor maior, os dois são iguais
 """
+
 print('+' * 25)
 print('  \033[1;92mCOMPARADOR DE NÚMEROS\033[m')
 print('+' * 25)
