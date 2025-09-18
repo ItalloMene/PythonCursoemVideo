@@ -7,16 +7,16 @@ de acordo com a tabela abaixo:
 - 30 até 40: Obesidade;
 - Acima de 40: Obesidade mórbida;
 """
-print('=' * 22)
-print('  \033[94mAVALIADOR DE IMC\033[m')
-print('=' * 22)
+print('=' * 40)
+print('\033[94m{:^40}\033[m'.format('AVALIADOR DE IMC'))
+print('=' * 40)
 nome = str(input('Digite o nome da pessoa a ser avaliada: '))
 altura = float(input('Digite sua altura (x.xx): '))
 peso = float(input('Digite seu peso em Kg: '))
 imc = peso / pow(altura, 2)
 
 print('=' * 15)
-print('   \033[94mRESULTADO\033[m')
+print('\033[94m{:^15}\033[m'.format('RESULTADO'))
 print('=' * 15)
 if (imc > 0) and (imc < 18.5):
     print('O resultado do IMC de \033[1;96m{}\033[m é \033[1;96m{:.1f}\033[m, considerado como \033[1;96mAbaixo do peso\033[m.'.format(nome, imc))

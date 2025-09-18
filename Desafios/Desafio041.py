@@ -8,9 +8,9 @@ e mostre a sua categoria, de acordo com a idade:
 - Acima - Master
 """
 from datetime import datetime
-print('=' * 22)
-print(' \033[93mCATEGORIA DO ATLETA\033[m')
-print('=' * 22)
+print('=' * 50)
+print('\033[93m{:^50}\033[m'.format('CATEGORIA DO ATLETA'))
+print('=' * 50)
 nascimento = int(input('Por favor, digite o ano de nascimento do atleta: '))
 ano_atual = datetime.now().year
 idade = ano_atual - nascimento

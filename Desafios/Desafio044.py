@@ -6,7 +6,6 @@ condição de pagamento:
 - em até 2x no cartão: preço normal;
 - 3x ou mais no cartão: 20% de juros;
 """
-
 texto = {
     'Negrito_S' : '\033[1;4m',
     'Azul' : '\033[94m',
@@ -14,7 +13,6 @@ texto = {
     'Verde' : '\033[92m',
     'Limpar' : '\033[m'
 }
-
 print('-' * 65)
 print('{}{:^65}{}'.format(texto['Azul'], 'PAGAMENTO DE PRODUTO', texto['Limpar']))
 print('-' * 65)
@@ -29,7 +27,6 @@ print(' {}3){} Até 2x no cartão (preço normal) \n {}4){} 3x ou mais no cartã
 print('-' * 65)
 opcao = int(input(' Selecione uma das opções de pagamento a cima (1, 2, 3 ou 4): '))
 print('-' * 65)
-
 if opcao == 1:
     print(' {}Opção selecionada:{} à vista dinheiro / cheque. \n Com o desconto de 10%.'
           .format(texto['Negrito_S'], texto  ['Limpar']))
@@ -37,7 +34,6 @@ if opcao == 1:
     print(' O cliente pagará {}R${:.2f}{} pelo produto que valia {}R${:.2f}{}.'
           .format(texto['Verde'],desconto, texto['Limpar'], texto['Verde'], preco, texto['Limpar']))
     print('-' * 65)
-
 elif opcao == 2:
     print(' {}Opção selecionada:{} à vista no cartão. \n Com o desconto de 5% .'
           .format(texto['Negrito_S'], texto  ['Limpar']))
@@ -45,7 +41,6 @@ elif opcao == 2:
     print(' O cliente pagará {}R${:.2f}{} pelo produto que valia {}R${:.2f}{}.'
           .format(texto['Verde'],desconto, texto['Limpar'], texto['Verde'], preco, texto['Limpar']))
     print('-' * 65)
-
 elif opcao == 3:
     print(' {}Opção selecionada:{} até 2x no cartão. \n Com o valor normal.'
           .format(texto['Negrito_S'], texto  ['Limpar']))
@@ -53,23 +48,19 @@ elif opcao == 3:
     print(' O cliente pagará {}R${:.2f}{} por parcela sem descontos ou juros. \n Totalizando {}R${:.2f}{} do valor do produto.'
           .format(texto['Verde'], parcela, texto['Limpar'],texto['Verde'], preco, texto['Limpar']))
     print('-' * 65)
-
 elif opcao == 4:
     print(' {}Opção selecionada:{} 3x ou mais no cartão. \n Com 20% de juros.'
           .format(texto['Negrito_S'], texto['Limpar']))
     quant_parcelas = int(input(' Digite a quantidade das parcelas: '))
-
     if quant_parcelas >= 3:
         val_juros = preco + preco * (20/100)
         val_parcelas = val_juros / quant_parcelas
         print(' O cliente pagará {}R${:.2f}{} por parcela. \n Totalizando {}R${:.2f}{} do valor do produto com o juros.'
               .format(texto['Verde'],val_parcelas,texto['Limpar'], texto['Verde'], val_juros, texto['Limpar'] ))
-
     else:
         print('{} [ERRO] Quantidade de parcelas não se adequa a opção selecionada.{} \n Por favor tente novamente!'
               .format(texto['Vermelho'], texto['Limpar']))
         print('-' * 65)
-
 else:
     print('{} [ERRO] Opção selecionada não é valida.{} \n Por favor tente novamente!'
           .format(texto['Vermelho'], texto['Limpar']))

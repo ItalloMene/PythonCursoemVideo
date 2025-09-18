@@ -5,16 +5,16 @@ de acordo com a média atingida:
 - Média entre 5,0 e 6,9: recuperação;
 - Média 7,0 ou superior: aprovado;
 """
-print('=' * 20)
-print(' \033[96mAVALIADOR DE MÉDIA\033[m')
-print('=' * 20)
+print('=' * 35)
+print('\033[96m{:^35}\033[m'.format('AVALIADOR DE MÉDIA'))
+print('=' * 35)
 aluno = str(input('Digite o nome do(a) aluno(a): '))
 nota1 = float(input('Digite a primeira nota de {}:'.format(aluno)))
 nota2 = float(input('Digite a segunda nota de {}: '.format(aluno)))
 media = (nota1 + nota2) / 2
-print('=' * 12)
-print(' \033[96mRESULTADO\033[m ')
-print('=' * 12)
+print('=' * 35)
+print(' \033[96m{:^35}\033[m'.format('RESULTADO'))
+print('=' * 35)
 if (media >= 0) and (media < 5.0):
     print('{} está \033[4;91mREPROVADO\033[m! \nSua média foi de \033[4;91m{:.1f}\033[m.'.format(aluno, media))
 elif (media >= 5.0) and (media < 6.9):

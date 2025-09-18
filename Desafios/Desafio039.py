@@ -7,9 +7,9 @@ O seu programa também deverá mostrar o tempo que falta ou que passou do prazo.
 """
 
 from datetime import datetime
-print('+' * 25)
-print(' \033[93mCHECAGEM DE ALISTAMENTO\033[m ')
-print('+' * 25)
+print('+' * 30)
+print('\033[93m{:^30}\033[m'.format('CHECAGEM DE ALISTAMENTO'))
+print('+' * 30)
 
 nascimento = int(input('Digite seu ano de nascimento: '))
 ano_atual = datetime.now().year
@@ -19,7 +19,7 @@ print('''Selecione uma das opções de gênero
 [ 2 ] Masculino''')
 gen = int(input('Digite o número correspondente a sua escolha: '))
 print(' ')
-print('        \033[4;93mRESPOSTA\033[m')
+print('\033[4;93m{:^30}\033[m'.format('RESPOSTA'))
 if gen == 1:
     print('Por ser do Gênero Feminino você não precisa se alistar.')
 elif gen == 2:
