@@ -16,11 +16,11 @@ texto = {
 }
 
 print('-' * 65)
-print('                     {}PAGAMENTO DE PRODUTO{}'.format(texto['Azul'], texto['Limpar']))
+print('{}{:^65}{}'.format(texto['Azul'], 'PAGAMENTO DE PRODUTO', texto['Limpar']))
 print('-' * 65)
 preco = float(input(' Digite o valor do produto: R$'))
 print('-' * 65)
-print('                     {}CONDIÇÕES DE PAGAMENTO{}'.format(texto['Azul'], texto['Limpar']))
+print('{}{:^65}{}'.format(texto['Azul'], 'CONDIÇÕES DE PAGAMENTO',texto['Limpar']))
 print('-' * 65)
 print(' {}1){} À vista dinheiro / cheque (Desconto de 10%); \n {}2){} À vista no cartão (5% de desconto);'
       .format(texto['Azul'], texto['Limpar'], texto['Azul'], texto['Limpar']))
