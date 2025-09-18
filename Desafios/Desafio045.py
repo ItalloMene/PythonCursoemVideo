@@ -10,7 +10,7 @@ texto = {
 }
 
 print('{}='.format(texto['Ciano']) * 40)
-print('               {}JOKENPÔ{}'.format(texto['Azul'], texto['Ciano']))
+print('{}{:^40}{}'.format(texto['Azul'], 'JOKENPÔ' ,texto['Ciano']))
 print('='.format(texto) * 40)
 sleep(0.8)
 # 1 - Pedra, 2 - Papel, 3 - Tesoura
