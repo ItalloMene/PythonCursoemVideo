@@ -16,7 +16,7 @@ if (reta1 + reta2 > reta3) and (reta1 + reta3 > reta2) and (reta2 + reta3 > reta
         print('Sendo ele um \033[1;4mTriângulo Equilátero\033[m.')
     elif (reta1 == reta2) or (reta2 == reta3) or (reta1 == reta3):
         print('Sendo ele um \033[1;4mTriângulo Isósceles\033[m.')
-    elif reta1 != reta2 != reta3:
+    elif reta1 != reta2 != reta3 != reta1:
         print('Sendo ele um \033[1;4mTriângulo Escaleno\033[m.')
 else:
     print('Com essas retas \033[91mNÃO É POSSÍVEL\033[m formar um Triângulo.')
