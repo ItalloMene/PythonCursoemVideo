@@ -8,7 +8,7 @@ from emoji import emojize
 print('=' * 30)
 print('{:^30}'.format('CONTAGEM FOGOS DE ARTIFÍCIO'))
 print('=' * 30)
-for c in range(10, 0, -1):
+for c in range(10, -1, -1):
     print('{:^30}'.format(c))
     sleep(1)
 print('=' * 30)
