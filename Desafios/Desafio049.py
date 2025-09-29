@@ -12,7 +12,7 @@ print('{:^35}'.format('RESULTADO'))
 print('=' * 35)
 for contador in range(0, 11):
     print('{:^12}{} x {:2} = {}'.format(' ',numero, contador, numero * contador))
-    sleep(1)
+    sleep(0.5)
 print('=' * 35)
 print('{:^35}'.format('FIM'))
 print('=' * 35)
