@@ -5,7 +5,7 @@ tentar descobrir qual foi o número escolhido pelo computador.
 """
 import random
 pensar = random.randint(0,5)
-print('Olá jogador, que tal adivinhar em qual o computador está pensando? ')
+print('Olá jogador, que tal adivinhar em qual número estou pensando? ')
 palpite = int(input('Por favor, digite um número entre 0 e 5: '))
 print('O computador pensou no número: {}'.format(pensar))
 if palpite == pensar:
