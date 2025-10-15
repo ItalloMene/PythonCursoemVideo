@@ -26,7 +26,7 @@ while True:
         print(' → Resultado: PAR')
         if escolha in 'Pp':
             print('-' * 35)
-            print(' + JOAGADOR VENCEU!')
+            print(' + JOGADOR VENCEU!')
             print('-' * 35)
             vitoria += 1
         else:
