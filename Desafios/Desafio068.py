@@ -9,7 +9,7 @@ print(f'\033[93m{'PAR OU IMPAR':^35}\033[m')
 print('=' * 35)
 vitoria = 0
 while True:
-    pensar = randint(1,10)
+    pensar = randint(0,10)
     while True:
         escolha = str(input(' → Escolha ente Par ou Impar: ')).upper().strip()[0]
         if  escolha in 'PpIi':
