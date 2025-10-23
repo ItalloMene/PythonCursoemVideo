@@ -70,6 +70,7 @@ pessoa = ('Gustavo', 39, 'M', 99.88)
 print(pessoa)
 del(pessoa)
 print(pessoa)
-"""
+
 pessoa = ('Gustavo', 39, 'M', 99.88)
 del(pessoa[0])
+"""
