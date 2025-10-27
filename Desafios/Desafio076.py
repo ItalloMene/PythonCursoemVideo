@@ -18,5 +18,5 @@ for cont in range(0, len(produtos)):
     if cont % 2 == 0:
         print(f'{cores['Produto']}{produtos[cont]:.<30}{cores['Limpar']}', end='')
     else:
-        print(f'{cores['Valor']}R$ {produtos[cont]:>6.2f}{cores['Limpar']}')
+        print(f'{cores['Valor']} R$ {produtos[cont]:>6.2f}{cores['Limpar']}')
 print('=' * 40)
