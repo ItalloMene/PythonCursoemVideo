@@ -20,5 +20,5 @@ alfabetico = sorted(times)
 for c in range(0, 20):
     print(f' > {alfabetico[c]}')
 print('-' * 85)
-print(f' O time da Chapecoense estava em 8º lugar na tabela do campeonato brasileiro de 2017')
+print(f' O time da Chapecoense estava em {times.index('Chapecoense') + 1} lugar na tabela do campeonato brasileiro de 2017')
 print('=' * 85)
