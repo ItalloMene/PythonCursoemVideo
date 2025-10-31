@@ -4,9 +4,9 @@ No final, mostre qual foi o maior e o menor valor digitado e as suas respectivas
 """
 numeros = list()
 for contador in range(1, 6):
-    numero = int(input(f'Digite o {contador}º número para lista: '))
+    numero = int(input(f'→ Digite o {contador}º número para lista: '))
     numeros.append(numero)
-print('-' * 30)
+print('-' * 45)
 for contador in range(0, len(numeros)):
     if contador == 0:
         maior = menor = numeros[0]
