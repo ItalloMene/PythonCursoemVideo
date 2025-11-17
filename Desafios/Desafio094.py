@@ -8,7 +8,6 @@ D) Uma lista com todas as pessoas com idade acima da média
 """
 grupo = []
 print('=' * 40)
-soma_idades = 0
 while True:
     nome = str(input(' → Nome: '))
     while True:
@@ -16,7 +15,6 @@ while True:
         if sexo in 'MF':
             break
     idade = int(input(' → Idade: '))
-    soma_idades += idade
     while True:
         resposta = str(input(' → Quer continuar [S/N]? ')).strip().upper()[0]
         if resposta in 'SN':
@@ -28,10 +26,10 @@ while True:
     if resposta in 'Nn':
         break
 
-quant_pessoas = 0
+quant_pessoas = soma_idades = 0
 for item in grupo:
     quant_pessoas += 1
-
+    soma_idades += item['idade']
 media_idades = soma_idades / quant_pessoas
 
 print(f'{"RESULTADOS":^40}')
