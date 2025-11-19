@@ -14,11 +14,13 @@ while True:
         sexo = str(input(' → Sexo [M/F]: ')).strip().upper()[0]
         if sexo in 'MF':
             break
+        print('\033[91m → ERRO! Por favor digite apenas M ou F.\033[m')
     idade = int(input(' → Idade: '))
     while True:
         resposta = str(input(' → Quer continuar [S/N]? ')).strip().upper()[0]
         if resposta in 'SN':
             break
+        print('\033[91m → ERRO! Responda apenas S ou N.\033[m')
     print('-' * 40)
     pessoas = {'nome':nome, 'sexo':sexo, 'idade':idade}
     grupo.append(pessoas.copy())
@@ -32,7 +34,7 @@ for item in grupo:
     soma_idades += item['idade']
 media_idades = soma_idades / quant_pessoas
 
-print(f'{"RESULTADOS":^40}')
+print(f'\033[92m{"RESULTADOS":^40}\033[m')
 print('=' * 40)
 print(f' A) O grupo tem {quant_pessoas} pessoas.')
 print(f' B) A média de idade é de {media_idades:.2f} anos')
@@ -46,6 +48,6 @@ for pessoa in grupo:
     if pessoa['idade'] > media_idades:
         print(f' → Nome = {pessoa['nome']}; Sexo = {pessoa['sexo']}; Idade = {pessoa['idade']};')
 print('=' * 40)
-print(f'{"FIM DO PROGRAMA":^40}')
+print(f'\033[92m{"FIM DO PROGRAMA":^40}\033[m')
 print('=' * 40)
 #print(grupo)
