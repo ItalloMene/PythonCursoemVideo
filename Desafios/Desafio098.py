@@ -8,6 +8,8 @@ C) Uma contagem personalizada.
 """
 from time import sleep
 
+def linha():
+    print('-=' * 40)
 def contador(inicio, fim, cont):
     if inicio < fim:
         for cont in range(inicio, fim + 1, cont):
@@ -21,15 +23,17 @@ def contador(inicio, fim, cont):
         print('FIM!')
 
 
+linha()
 contador(1, 10, 1)
-print('=-' * 40)
+linha()
 contador(10,0,2)
-print('=-' * 40)
+linha()
 começo = int(input('→ Digite o começo da contagem: '))
 final = int(input('→ Digite o final da contagem: '))
 passo = int(input('→ Digite os passos da contagem: '))
-print('=-' * 40)
+linha()
 if passo == 0:
     contador(inicio= começo, fim= final, cont= 1)
 else:
     contador(inicio= começo,fim= final,cont= passo)
+linha()
