@@ -11,6 +11,7 @@ from time import sleep
 def linha():
     print('-=' * 40)
 def contador(inicio, fim, cont):
+    print(f'Contagem de {inicio} até {fim} de {cont} em {cont}:')
     if inicio < fim:
         for cont in range(inicio, fim + 1, cont):
             print(cont, end=' → ')
@@ -34,6 +35,9 @@ passo = int(input('→ Digite os passos da contagem: '))
 linha()
 if passo == 0:
     contador(inicio= começo, fim= final, cont= 1)
+elif passo < 0:
+    passo *= -1
+    contador(inicio= começo, fim=final, cont= passo)
 else:
     contador(inicio= começo,fim= final,cont= passo)
 linha()
