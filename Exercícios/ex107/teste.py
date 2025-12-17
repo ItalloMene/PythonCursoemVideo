@@ -1,4 +1,4 @@
-import moedaE
+import moeda
 
 p = float(input("Digite o preço: R$"))
 print(f'A metade de R${p} é {moedaE.metade(p)}')
