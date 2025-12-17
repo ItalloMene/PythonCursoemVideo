@@ -3,26 +3,38 @@ def moeda(preço):
     return val
 
 
-def aumentar(preço, taxa):
+def aumentar(preço, taxa, form=False):
     res = preço + (preço * taxa/100)
-    val = moeda(res)
-    return val
+    if form:
+        val = moeda(res)
+        return val
+    else:
+        return res
 
 
-def diminuir(preço,taxa):
+def diminuir(preço,taxa, form=False):
     res = preço - (preço * taxa/100)
-    val = moeda(res)
-    return val
+    if form:
+        val = moeda(res)
+        return val
+    else:
+        return res
 
 
-def dobrar(preço):
+def dobrar(preço, form=False):
     res = preço * 2
-    val = moeda(res)
-    return val
+    if form:
+        val = moeda(res)
+        return val
+    else:
+        return res
 
 
-def metade(preço):
+def metade(preço, form=False):
     res = preço / 2
-    val = moeda(res)
-    return val
+    if form:
+        val = moeda(res)
+        return val
+    else:
+        return res
 
