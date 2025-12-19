@@ -49,6 +49,3 @@ def resumo(preço, aum, dim):
     print(f'{aum}{"% de aumento:":<18} {aumentar(preço, aum, True)}')
     print(f'{dim}{"% de redução:":<18} {diminuir(preço, dim, True)}')
     print('=' * 30)
-
-
-
